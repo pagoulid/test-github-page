@@ -1,0 +1,67 @@
+body{
+
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+
+
+
+.menu-block{
+    width:50%;
+    height:90%;
+    background-color: burlywood;
+    margin:auto;
+    max-width:900px;
+    min-width:300px;
+}
+
+.header-block{
+    margin-top:0.5rem;
+}
+
+
+
+
+hr{
+    height:2px;
+    background-color: brown;
+    
+}
+
+
+
+/*TITLES*/
+.title,.subtitle{
+    text-align:center;
+}
+.subtitle{
+    padding-left:0.5rem;
+}
+
+.header-title{
+    font-family: fantasy;
+}
+/*TITLES*/
+
+.section-img{
+    display:block;
+    margin:0px auto;
+}
+/*MENU LIST*/
+.section-list{
+    list-style:none;
+    line-height:60%;
+    padding-left:0;
+}
+
+/*width:50%;*/
+.section-item{
+    display:inline-block;
+    
+}
+
+.section-price{
+    float:right;
+}
+/*MENU LIST*/
+

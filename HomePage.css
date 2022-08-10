@@ -1,0 +1,195 @@
+
+
+/*Normalization*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+/*Normalization*/
+
+
+
+
+
+/*NAVBAR*/
+.nav-block{
+    height:50%;
+    width:inherit;
+    background-color: darkmagenta;
+}
+
+.nav-list{
+    display:inline;
+    list-style:none;
+    margin-top:1rem;
+    line-height:200%;
+
+    
+}
+
+.nav-list li{
+    display:inline-block;
+    color:white;
+    
+    
+}
+
+.nav-list li p{
+    font-size: large;
+    font-weight: bold;
+    margin-top:auto;
+    margin-bottom:auto;
+
+}
+/*NAVBAR*/
+
+/*MAIN*/
+.main-block{
+    width:70%;
+    height:690px;
+    
+    margin-left:auto;
+    margin-right:auto;
+    
+    background-color: burlywood;
+}
+
+.main-content{
+    padding-top:2rem;
+
+}
+
+.main-img{
+    opacity:0;
+    float:right;
+    position:relative;
+    padding-top:2rem;
+    animation:imgTransit 2s forwards linear;
+
+}
+
+
+
+.main-par{
+    text-align: center;
+    color:grey;
+    font-size: smaller;
+    animation:textScale 2s forwards ease;
+    margin-top:6rem;
+    padding-top:4rem;
+}
+
+.main-title{
+    opacity:0;
+    animation:ChangeOp 2s forwards linear;
+}
+/*MAIN*/
+
+/*ANIMATIONS*/
+
+@keyframes ChangeOp{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.8;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+/*NOT WORKING WTF??? WHY*/
+@keyframes imgTransit{
+    0%{
+        opacity:0;
+        left:10rem;
+    }
+    
+    
+    100%{
+        opacity:1;
+        left:0;
+    }
+}
+
+@keyframes textScale{
+    0%{
+        transform: scale(0.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+/*ANIMATIONS*/
+
+.footer-block{
+    width:inherit;
+    
+    background-color: darkmagenta;
+
+}
+
+
+.footer-link,.footer-subtitle{
+    text-align: center;
+}
+
+.footer-subtitle{
+    padding-left:0.5rem;
+}
+
+@media screen and (max-width:950px){
+    .main-img{
+        display:block;
+        float:none;
+        margin:auto;
+    }
+
+    @media screen and (max-width:700px){
+        
+        .main-title{
+            height:10vh;
+            
+
+        }
+        .main-img{
+           width:95%;
+           height:85%;
+        }
+
+    }
+
+    @media screen and (max-width:565px){
+        .main-content{
+            padding-top:10px;
+        }
+        .main-title{
+            width:70%;
+            min-width:200px;
+            margin-left:auto;
+            margin-right:auto;
+            
+        }
+
+        .main-img{
+            margin-top:20%;
+        }
+    }
+}
